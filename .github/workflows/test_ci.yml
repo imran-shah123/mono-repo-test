@@ -1,17 +1,13 @@
-name: Monorepo PR Repo Labeler
+name: CI
 
 on:
+  push:
+    branches: [ main ]
   pull_request:
-    types: [opened]
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  labelPR:
-    name: Label PR With Repo(s)
+  ci:
     runs-on: ubuntu-latest
     steps:
-      - name: Label PRs
-        uses: adamzolyak/monorepo-pr-labeler-action@patching
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
