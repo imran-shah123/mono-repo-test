@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    paths:
-      - "main/mono-repo-test/frontend"
-      - ".github/workflows/test_ci.yaml"
+      branches: [ main ]
+  pull_request:
+      branches: [ main ]
 
 jobs:
   ci:
