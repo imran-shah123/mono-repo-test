@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-      branches: [ main ]
+      branches: [ mono-repo-test/frontend ]
   pull_request:
     branches: [ main ]
 
