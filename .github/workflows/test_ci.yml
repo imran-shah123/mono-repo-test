@@ -3,6 +3,9 @@ name: CI
 on:
   push:
       branches: [ main ]
+      paths:
+      - "mono-repo-test/frontend/**"
+      - ".github/workflows/test_ci.yml"
   pull_request:
     branches: [ main ]
 
@@ -16,6 +19,9 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
+      - name: Run tests
+        run: |-
+          cd routes/auth
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
