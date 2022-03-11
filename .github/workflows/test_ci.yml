@@ -23,10 +23,9 @@ jobs:
       - name: npm ci, build and test
         run: |-
           pwd 
-          cd ..
-          ls
-          pwd 
+          ls 
           cd backend
+          pwd
           npm ci
           npm run build --if-present
           npm test      
