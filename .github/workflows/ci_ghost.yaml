@@ -30,7 +30,6 @@ jobs:
           echo "step 2"
           npm i
           echo "step 3"
-          ghost start
           echo "step 4"
           npm ci
           echo "step 5"
