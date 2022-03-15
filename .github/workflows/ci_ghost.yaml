@@ -30,6 +30,8 @@ jobs:
           echo "step 2"
           echo "step 3"
           echo "step 4"
+          mkdir test1
+          cd test1
           npm install ghost-cli@latest -g
           ghost install
           npm ci
