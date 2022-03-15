@@ -32,5 +32,5 @@ jobs:
           npm install ghost-cli@latest -g
           npm ci
           echo "step 5"
-          ghost start
+          grunt start
           echo "step finished"
