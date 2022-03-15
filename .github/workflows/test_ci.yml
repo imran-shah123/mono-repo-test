@@ -36,6 +36,7 @@ jobs:
           cd ..
           pwd 
           ls 
+          cd mono-repo-test
           cd frontend
           pwd
           npm ci
