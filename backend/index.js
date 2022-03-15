@@ -5,7 +5,7 @@ const app = express();
 
 app.get("/", (req, resp) => {
     console.log("Sum of 1+2: " + String(mathOperations.add(1,2)));
-    resp.send("Hello DevOps! Apps is successfully deployed on producion through CI/CD");
+    resp.send("Hello DevOp! Apps is successfully deployed on producion through CI/CD");
 });
 
 
