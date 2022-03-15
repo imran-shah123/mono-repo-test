@@ -31,6 +31,8 @@ jobs:
           echo "step 3"
           echo "step 4"
           npm install ghost-cli@latest -g
+          echo "step 4"
           ghost start
           echo "step 5"
+          ghost Doctor
           echo "step finished"
