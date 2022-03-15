@@ -23,7 +23,7 @@ jobs:
       - name: npm ci, build and test
         run: |-
           ls 
-          cd ghost
+          cd Ghost
           pwd
           npm install ghost-cli@latest -g
           ghost start
