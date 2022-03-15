@@ -32,6 +32,4 @@ jobs:
           npm install ghost-cli@latest -g
           npm ci
           echo "step 5"
-          cd ..
-          ghost start 
           echo "step finished"
