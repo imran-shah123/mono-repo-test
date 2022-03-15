@@ -33,7 +33,7 @@ jobs:
           
       - name: npm ci, build and test
         run: |-
-          cd..
+          cd ..
           pwd 
           ls 
           cd frontend
