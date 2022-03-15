@@ -1,1 +1,4 @@
 **/node_modules/**
+**/.ghost-cli
+**/.ghostpid
+**/http__localhost**
