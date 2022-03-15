@@ -33,7 +33,7 @@ jobs:
           mkdir test1
           cd test1
           npm install ghost-cli@latest -g
-          ghost install
+          ghost install local
           npm ci
           echo "step 5"
           echo "step finished"
