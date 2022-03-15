@@ -23,7 +23,7 @@ jobs:
       - name: npm ci, build and test
         run: |-
           ls 
-          cd Ghost/current/
+          cd Ghost/current
           pwd
           echo "step 1"
           echo "step 2"
