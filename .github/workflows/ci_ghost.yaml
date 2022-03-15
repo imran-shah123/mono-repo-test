@@ -26,6 +26,7 @@ jobs:
           cd Ghost
           pwd
           npm install ghost-cli@latest -g
+          npm i
           ghost start
           npm ci
           npm run build --if-present
