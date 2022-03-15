@@ -32,4 +32,5 @@ jobs:
           npm install ghost-cli@latest -g
           npm ci
           echo "step 5"
+          npm run build --if-present
           echo "step finished"
