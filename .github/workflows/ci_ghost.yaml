@@ -35,6 +35,5 @@ jobs:
           echo "step 4"
           npm install
           echo "step 5"
-          cd ..
           npm run build --if-present
           echo "step finished"
