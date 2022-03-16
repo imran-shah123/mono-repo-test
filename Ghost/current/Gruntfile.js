@@ -1,8 +1,8 @@
 console.log("start")
 const config = require('./core/shared/config');
+console.log("end")
 const fs = require('fs-extra');
 const path = require('path');
-console.log("end")
 
 // Utility for outputting messages indicating that the admin is building, as it can take a while.
 let hasBuiltClient = false;
