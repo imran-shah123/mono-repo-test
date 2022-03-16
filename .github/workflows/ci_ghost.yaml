@@ -30,6 +30,8 @@ jobs:
           echo "step 3"
           echo "step 4"
           npm install ghost-cli@latest -g
+          npm install -g grunt-cli
+          npm install grunt --save-dev
           echo "step 4"
           npm install
           echo "step 5"
