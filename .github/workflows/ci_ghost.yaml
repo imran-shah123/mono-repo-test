@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: ghost-latest
     
     strategy:
       matrix:
@@ -22,8 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
         run: |-
-          docker pull ghost
-          docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
           ls 
           cd Ghost/current
           pwd
@@ -31,11 +29,7 @@ jobs:
           echo "step 2"
           echo "step 3"
           echo "step 4"
-          npm install ghost-cli@latest -g
-          npm install -g grunt-cli
-          npm install grunt --save-dev
           echo "step 4"
-          npm install
           echo "step 5"
           npm run build --if-present
           echo "step finished"
