@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    runs-on: docker pull darwinzeng/darwin-container:latest
+    runs-on: ubuntu:latest
     
     strategy:
       matrix:
@@ -38,5 +38,5 @@ jobs:
           echo "step 4"
           echo "step 4"
           echo "step 5"
-          npm run build --if-present
+          run build
           echo "step finished"
