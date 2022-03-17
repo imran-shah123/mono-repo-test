@@ -27,16 +27,3 @@ jobs:
           docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
           echo "step 2"
           ls 
-          echo "step 2"
-          pwd
-          echo "step 1"
-          cd Ghost/current
-          ls
-          npm install grunt-cli --save-dev
-          echo "step 2"
-          echo "step 3"
-          echo "step 4"
-          echo "step 4"
-          echo "step 5"
-          run build
-          echo "step finished"
