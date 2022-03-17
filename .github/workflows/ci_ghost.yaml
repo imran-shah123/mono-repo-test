@@ -22,9 +22,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
         run: |-
-          docker pull ghost
+          ls
+          pwd
           echo "step 1"
-          docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
+          npm install ghost-cli@latest -g
           echo "step 2"
+          npm install grunt-cli --save-dev
           ls 
           pwd
+          cd Ghost/49.39.0
+          npm run build
