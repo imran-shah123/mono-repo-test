@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: darwinzeng/darwin-container:latest
     
     strategy:
       matrix:
@@ -22,7 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
         run: |-
-          docker pull darwinzeng/darwin-container:latest
           docker pull ghost
           echo "step 1"
           docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
