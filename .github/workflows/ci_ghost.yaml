@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-latest
+    runs-on: ghost
     
     strategy:
       matrix:
@@ -22,7 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
         run: |-
-          docker pull ghost
           ls 
           cd Ghost/current
           pwd
