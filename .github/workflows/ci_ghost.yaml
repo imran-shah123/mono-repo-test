@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    runs-on: ghost
+    runs-on: ubuntu-latest
     
     strategy:
       matrix:
@@ -22,8 +22,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
         run: |-
-          ls 
-          cd Ghost/current
+          docker pull ghost
+          docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
           pwd
           echo "step 1"
           echo "step 2"
