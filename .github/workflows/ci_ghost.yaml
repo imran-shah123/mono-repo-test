@@ -8,7 +8,7 @@ on:
 
 jobs:
   ci:
-    runs-on: darwinzeng/darwin-container:latest
+    runs-on: docker pull darwinzeng/darwin-container:latest
     
     strategy:
       matrix:
