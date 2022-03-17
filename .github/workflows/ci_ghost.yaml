@@ -23,7 +23,11 @@ jobs:
       - name: npm ci, build and test
         run: |-
           docker pull ghost
+          echo "step 1"
           docker run -d --name some-ghost -e url=http://localhost:3001 -p 3001:2368 ghost
+          echo "step 2"
+          ls 
+          echo "step 2"
           pwd
           echo "step 1"
           cd ghost/current
